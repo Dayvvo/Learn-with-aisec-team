@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="signup-form-containers">
+        <div class="header">
+            <p>Already a member? <b>Sign In</b></p>
+            <h2>X</h2>
+        </div>
+        <h1><b>Welcome!</b></h1>
+        <div class="forms">
+            <form>
+                <div class="normal-form">
+                    <div class="col">
+                        <div class="name">
+                            <label for="First-Name">First Name</label>
+                            <input type="text" placeholder="John" name="First-Name">
+                        </div>
+                        <div class="name">
+                            <label for="last-Name">Last Name</label>
+                            <input type="text" placeholder="Doe" name="last-Name">
+                        </div>
+                    </div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="johndoe@gmail.com" name="email">
+                    <div class="col">
+                        <div class="passwords">
+                            <label for="First-Name">Password</label>
+                            <input type="text" placeholder="**********" name="First-Name">
+                        </div>
+                        <div class="password">
+                            <label for="last-Name">Confirm Password</label>
+                            <input type="password" placeholder="**********" name="last-Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="password-checks">
+                    <div class="uppercase">
+                        <input type="checkbox" name="uppercase-letter">
+                        <label for="uppercase-letter">Contains uppercase letter</label>
+                    </div>
+                    <div class="uppercase">
+                        <input type="checkbox" name="uppercase-letter">
+                        <label for="uppercase-letter">Contains atleast one special letter</label>
+                    </div>
+                    <div class="uppercase">
+                        <input type="checkbox" name="uppercase-letter">
+                        <label for="uppercase-letter">Contains atleast one number</label>
+                    </div>
+                    <div class="uppercase">
+                        <input type="checkbox" name="uppercase-letter">
+                        <label for="uppercase-letter">Passwords are marching</label>
+                    </div>
+                </div>
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

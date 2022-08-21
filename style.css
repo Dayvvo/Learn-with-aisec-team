@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+.signup-form-containers{
+    border: 1px solid blue;
+    width: 40%;
+    min-width: 50%;
+    /* min-height: 80vh; */
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.name,input[type=email],.uppercase{
+    margin: 10px 0;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+}
+.normal-form{
+    margin: 10px 0;
+}
+.normal-form input{
+    height: 1.7rem;
+    width: 90%;
+    background-color: whitesmoke;
+    border: none;
+    padding: 1px;
+}
+
+input:focus{
+    outline: rgb(150, 147, 147) solid 1px;
+}
+.password-checks{
+    display: flex;
+    flex-direction: column;
+}
+.password-checks > * {
+    margin: 4px 0;
+}
+.uppercase{
+    display: flex;
+}
+.uppercase label{
+    margin-left: 7px;
+}
+input[type=checkbox]{
+}
+input[type=checkbox]:checked{
+    border-radius: 50%;
+
+    background-color: green;
+}
+button{
+    min-width: 100%;
+    width: 100%;
+    min-height: 2.5rem;
+    color: white;
+    background: linear-gradient(to right, rgb(119, 119, 255), rgb(252, 72, 252));
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+button:hover{
+    color: whitesmoke;
+    background: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 255));
+}
+@media screen and (max-width: 640px) {
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        font-size: smaller;
+    }
+}

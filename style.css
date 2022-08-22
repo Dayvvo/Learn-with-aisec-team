@@ -63,13 +63,15 @@ input:focus{
     margin-left: 7px;
 }
 input[type=checkbox]{
+    border-radius: 100%;
 }
-input[type=checkbox]:checked{
-    border-radius: 50%;
-
-    background-color: green;
+.cancelBtn{
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
 }
-button{
+.validate, .submit-btn{
     min-width: 100%;
     width: 100%;
     min-height: 2.5rem;
@@ -81,7 +83,7 @@ button{
     cursor: pointer;
     transition: ease-in-out;
 }
-button:hover{
+.submit-btn:hover,.validate:hover{
     color: whitesmoke;
     background: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 255));
 }

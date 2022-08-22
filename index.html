@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form id="form" class="form">
+        <div class="form-container">
+            <div class="words">
+
+                <p> Already a member? <span> Sign in</span></p>
+                <h1> Welcome!</h1>
+
+                <i class="fa fa-close" style="font-size:24px"></i>
+
+            </div>
+            <div class="first">
+
+
+                <div class="form-control">
+                    <label for="firstname"> First Name</label>
+                    <input type="text" id="firstname" placeholder="John">
+                    <small> TOLUWASE</small>
+                </div>
+                <div class="form-control" id="control-first">
+                    <label for="lastname"> Last Name</label>
+                    <input type="text" id="lastname" placeholder="Doe">
+                    <small> TOLUWASE</small>
+                </div>
+
+            </div>
+            <div class="form-control">
+                <label for="email"> </label>Email
+                <input type="email" id="email" placeholder="johndoe@gmail.com">
+                <small> TOLUWASE</small>
+            </div>
+            <div class="second">
+                <div class="form-control">
+                    <label for="password"> Password</label>
+                    <input type="password" id="password" placeholder="********">
+                    <small> TOLUWASE</small>
+                </div>
+                <div class="form-control">
+                    <label for="password"> Confrim Password</label>
+                    <input type="password" id="password2" placeholder="********">
+                    <small> TOLUWASE</small>
+                </div>
+            </div>
+            <div class="radio">
+
+
+                <input type="radio" name="chose" id="chose" value="Contains at least one "> Contains at least one
+                <br>
+                <input type="radio" name="chose" id="chose" value="Contains at least one special character">Contains at
+                least one special character
+                <br>
+                <input type="radio" name="chose" id="chose" value="Contains at least one number">Contains at least one
+                number
+                <br>
+                <input type="radio" name="chose" id="chose" value="Passwords are matching"> Passwords are matching
+            </div>
+
+            <button type="submit" class="submit"> Submit</button>
+            <button type="submit" class="validate"> Validate</button>
+
+
+
+
+
+        </div>
+    </form>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

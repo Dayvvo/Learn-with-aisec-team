@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-Up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/7f1f3f5965.js"></script>
 </head>
 <body>
     <div class="signup-form-containers">
@@ -20,23 +21,40 @@
                     <div class="col">
                         <div class="name">
                             <label for="First-Name">First Name</label>
-                            <input type="text" required class="firstName" placeholder="John" name="First-Name">
+                            <div class="input-contents">
+                                <input type="text" required class="firstName" placeholder="John" name="First-Name">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
                         </div>
                         <div class="name">
                             <label for="last-Name">Last Name</label>
-                            <input class="lastName" required type="text" placeholder="Doe" name="last-Name">
+                            <div class="input-contents">
+                                <input class="lastName" required type="text" placeholder="Doe" name="last-Name">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+
+                            </div>
                         </div>
                     </div>
                     <label for="email">Email</label>
-                    <input type="email" placeholder="johndoe@gmail.com" name="email">
+                    <div class="input-contents">
+                        <input type="email"  placeholder="johndoe@gmail.com" name="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                    </div>
                     <div class="col">
                         <div class="passwords">
                             <label for="Password">Password</label>
-                            <input class="password" type="password" placeholder="**********" name="Password">
+                            <div class="input-contents">
+                                <input class="password"  type="password" placeholder="**********" name="Password">
+                                <i class="fas fa-key"></i>
+                            </div>
                         </div>
                         <div class="password">
                             <label for="Confirm-Password">Confirm Password</label>
-                            <input type="password" placeholder="**********" name="Confirm-Password">
+                            <div class="input-contents">
+                                <input type="password"  placeholder="**********" name="Confirm-Password">
+                                <i class="fas fa-key"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,8 +77,9 @@
                     </div>
                 </div>
                 <input type="submit" class="submit-btn"></input>
-                <button class="validate">Validate</button>
             </form>
+            <button class="validate">Validate</button>
+
         </div>
     </div>
     <script src="app.js"></script>

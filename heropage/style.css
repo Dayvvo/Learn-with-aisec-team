@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Inter:wght@400;500;600;900&family=Libre+Franklin&family=Montserrat:wght@400;500;700;800&family=Roboto:wght@400;700&display=swap');
+
+ .show{
+        display: none;
+        flex-direction: column;
+        background: rgb(223, 16, 16);
+        /* height: 100vh; */
+        position: absolute;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+        /* margin-top: 1rem; */
+        /* z-index: 1; */
+        /* justify-content: flex-start; */
+        /* transform: translateX(-200%); */
+    }
+    .show .linksDiv, .show .cta{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    .disp{
+        display: flex;
+    }
+    
+    body{
+        overflow: hidden;
+    }
+    .closeNav{
+        display: none;
+    }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hamburgerMenu{
+    display: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    /* width: 100%; */
+    background: #FFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+/* .logo{
+    /* font-size: 1.3rem;
+    background: linear-gradient(115.36deg, rgba(212, 185, 246, 0) -16.08%, #B994F8 97.64%), linear-gradient(180deg, rgba(77, 229, 223, 0) 0%, #48DEDB 100%);
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+
+.linksDiv{
+    width: 100%;
+    height: 23px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 76px;
+    list-style: none;
+}
+
+.linksDiv li a{
+    text-decoration: none;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.6157px;
+    /* margin-right: 3rem; */
+    line-height: 112%;
+    width: 71px;
+    height: 23px;
+    
+}
+
+.cta{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.loginbtnText{
+    color: #514B4B;
+    font-family: 'Libre Franklin';
+    text-decoration: none;
+    letter-spacing: 0.02em;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.46px;
+    line-height: 112%;
+    /* or 16px */
+}
+
+.signUpbtnText{
+    white-space: nowrap;
+    background: linear-gradient(115.36deg, rgba(212, 185, 246, 0) -16.08%, #B994F8 97.64%), linear-gradient(180deg, rgba(77, 229, 223, 0) 0%, #48DEDB 100%);
+    border-radius: 8px;
+    padding: .7rem 2rem .7rem 2rem;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.4636px;
+    line-height: 112%;
+
+}
+
+.heroSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5rem;
+    /* height: 60vh; */
+    /* padding: 10rem; */
+}
+
+.heroSec h1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 77px;
+text-align: center;
+    color: #000000;
+}
+
+.offers{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+}
+
+.offer{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.offer p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.togglesOffer{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch{
+    position: relative;
+    width: 60px;
+    height: 34px;
+    background-color: turquoise;
+}
+
+.switch input:checked{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+}
+
+input:checked + .slider{
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider::before{
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.togglesOffer p{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+}
+
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    gap: 3rem;
+    padding: 1rem 0;
+    padding-bottom: 1.5rem;
+}
+hr{
+    width: 40%;
+}
+
+.prices, .pricesBusiness, .pricesPro{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+color: #747474;
+width: 300px;
+height: 475px;
+background: #FFFFFF;
+border: 1px solid #DBDBDB;
+/* drop shadow */
+
+box-shadow: 0px 12.7293px 12.7293px rgba(50, 50, 71, 0.08), 0px 19.0939px 25.4586px rgba(50, 50, 71, 0.08);
+border-radius: 16px;
+}
+
+.pricing{
+    padding: 2rem;
+}
+
+.pricing button{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 17px;
+    /* identical to box height */
+    padding: 1rem;
+    
+    text-align: center;
+    
+    color: #1465FA;
+    background: #FFFFFF;
+    /* border: 1px solid #DBDBDB; */
+    /* drop shadow */
+    border: none;
+    
+    box-shadow: 0px 12.7293px 12.7293px rgba(50, 50, 71, 0.08), 0px 19.0939px 25.4586px rgba(50, 50, 71, 0.08);
+    border-radius: 6px;  
+    
+}
+.button{
+    border-radius: 6px;  
+    padding: .13rem;
+    background: linear-gradient(115.36deg, rgba(212, 185, 246, 0) -16.08%, #B994F8 97.64%), linear-gradient(180deg, rgba(77, 229, 223, 0) 0%, #48DEDB 100%);
+}
+
+.pricesPro{
+    background-color: #5C5C5C;
+    color: white;
+}
+.pricesPro p {
+    color: #DDDDDD;
+}
+
+.pricing p{
+    
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+}
+
+.buttonPro{
+    background: #1465FA;
+    border-radius: 6px;  
+    padding: .13rem;
+}
+
+.buttonPro button{
+    color: white;
+    background: linear-gradient(115.36deg, rgba(212, 185, 246, 0) -16.08%, #B994F8 97.64%), linear-gradient(180deg, rgba(77, 229, 223, 0) 0%, #48DEDB 100%);
+}
+
+.pricing h4{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.pricesPro h4{
+    color: #FFFFFF;
+}
+
+.pricing h1{
+ 
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+.pricesPro h1 {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1280px){
+    .linksDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .linksDiv li a{
+        font-size: 1rem;
+    }
+
+
+    .pricing button{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: .7rem;
+        cursor: pointer;
+        line-height: 17px;
+        /* identical to box height */
+        padding: 1rem;
+        
+        text-align: center;
+        
+        color: #1465FA;
+        background: #FFFFFF;
+        /* border: 1px solid #DBDBDB; */
+        /* drop shadow */
+        border: none;
+        /* width: 100%; */
+        
+        box-shadow: 0px 12.7293px 12.7293px rgba(50, 50, 71, 0.08), 0px 19.0939px 25.4586px rgba(50, 50, 71, 0.08);
+        border-radius: 6px;  
+        
+    }
+    .button{
+        border-radius: 6px;  
+        /* padding: .13rem; */
+        background: linear-gradient(115.36deg, rgba(212, 185, 246, 0) -16.08%, #B994F8 97.64%), linear-gradient(180deg, rgba(77, 229, 223, 0) 0%, #48DEDB 100%);
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .prices, .pricesBusiness, .pricesPro{
+        width: 270px;
+        height: 465px;
+    }
+    .pricing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+        gap: 3rem;
+    }
+    .heroSec h1{
+        font-size: 3.5rem;
+    }
+    .togglesOffer p{
+        font-size: smaller;
+    }
+    .offer p{
+        font-size: .9rem;
+        white-space: nowrap;
+        gap: 50rem;
+    }
+    .offers{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .offer{
+        gap: .2rem;
+    }
+    .closeNav{
+        display: flex;
+        font-size: 1.5rem;
+        cursor: pointer;
+        user-select: none;
+        background: none;
+        right: 20px;
+        border: none;
+        position: inherit;
+        color: white;
+        z-index: 20;
+    }
+    header{
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .hamburgerMenu{
+        display: flex;
+        cursor: pointer;
+        top: 0;
+        bottom: 0;
+        right: 10px;
+        position: absolute;
+    }
+    .linksDiv{
+        display: flex;
+        flex-direction: column;
+    }
+}

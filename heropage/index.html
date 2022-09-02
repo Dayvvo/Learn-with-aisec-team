@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="/heropage/WILLIAMS.png" alt="">
+        <h1 class="hamburgerMenu"> ☰ </h1>
+        <div class="linkDivs">
+            <button class="closeNav">X</button>
+        </div>
+        <nav>
+            <ul class="linksDiv">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="#" class="loginbtnText">Login</a>
+            <a href="#" class="signUpbtnText">Sighn-Up</a>
+        </div>
+        
+       
+
+    </header>
+
+    <section class="heroSec">
+        <h1>Find the plan thats <br>
+            right for you 
+        </h1>
+        <div class="offers">
+            <div class="offer">
+                <img src="/heropage/Vector 1.svg" alt="checkIcon">
+                <p>Free 15-day trial</p>
+            </div>
+            <div class="offer">
+                <img src="/heropage/Vector 1.svg" alt="checkIcon">
+                <p>Unlimited Team Members</p>
+            </div>
+            <div class="offer">
+                <img src="/heropage/Vector 1.svg" alt="checkIcon">
+                <p>Cancel Anytime</p>
+            </div>
+        </div>
+        <div class="togglesOffer">
+            <p>Billed Yearly</p>
+            <label for="" class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <p>Billed Monthly</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="prices">
+            <h4>Free</h4>
+            <h1>$14</h1>
+            <p>per user,per month</p>
+            <div class="button">
+                <button>Start My 15-day Trial</button>
+            </div>
+            <hr>
+            <p>5 active projects</p>
+            <p>5 collaborative projects</p>
+            <p>5mb files download</p>
+            <p>3 filters</p>
+            <p>24/7 Support</p>
+        </div>
+        <div class="pricesPro">
+            <h4>Pro</h4>
+            <h1>$14</h1>
+            <p>per user,per month</p>
+            <div class="buttonPro">
+                <button>Start My 15-day Trial</button>
+            </div>            <hr>
+            <p>5 active projects</p>
+            <p>5 collaborative projects</p>
+            <p>5mb files download</p>
+            <p>3 filters</p>
+            <p>24/7 Support</p>
+        </div>
+        <div class="pricesBusiness">
+            <h4>Business</h4>
+            <h1>$14</h1>
+            <p>per user,per month</p>
+            <div class="button">
+                <button>Start My 15-day Trial</button>
+            </div>            <hr>
+            <p>5 active projects</p>
+            <p>5 collaborative projects</p>
+            <p>5mb files download</p>
+            <p>3 filters</p>
+            <p>24/7 Support</p>
+        </div>
+    </section>
+
+
+    <script>
+        const linkDiv = document.createElement('div');
+        const linkDivs = document.querySelector('.linkDivs')
+
+
+        const links = document.querySelector('.linksDiv')
+        const cta = document.querySelector('.cta')
+
+
+        const hamburger = document.querySelector('.hamburgerMenu')
+        const header = document.querySelector('header')
+        const closeNav = document.querySelector('.closeNav')
+
+
+           
+           if (window.innerWidth <= 640) {
+               console.log('ewo')
+            linkDiv.append(links);
+            linkDiv.append(cta);
+            linkDiv.append(closeNav);
+            linkDivs.appendChild(linkDiv);
+            linkDiv.classList.add('show')
+           }    
+
+        hamburger.addEventListener('click', () => {
+            console.log('omooo');
+            linkDiv.classList.add('disp');
+        closeNav.addEventListener('click', () => {
+            linkDiv.classList.remove('disp');
+        })
+})
+    </script>
+</body>
+</html>

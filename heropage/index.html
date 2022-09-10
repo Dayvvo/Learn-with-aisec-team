@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://use.fontawesome.com/abe9fd8bb5.js"></script>
 </head>
 <body>
     <header>
@@ -75,9 +75,13 @@
             <p>3 filters</p>
             <p>24/7 Support</p>
         </div>
+        
         <div class="pricesPro">
             <h4>Pro</h4>
-            <h1>$14</h1>
+            <div class="bellIcon">
+                <i class="fa-light fa-bell icon"></i>
+                <p>$14</p>
+            </div>
             <p>per user,per month</p>
             <div class="buttonPro">
                 <button>Start My 15-day Trial</button>
@@ -88,6 +92,7 @@
             <p>3 filters</p>
             <p>24/7 Support</p>
         </div>
+        
         <div class="pricesBusiness">
             <h4>Business</h4>
             <h1>$14</h1>
@@ -126,7 +131,9 @@
             linkDiv.append(closeNav);
             linkDivs.appendChild(linkDiv);
             linkDiv.classList.add('show')
-           }    
+           }else{
+            linkDivs.innerHTML = '';
+           }
            
 
 

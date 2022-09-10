@@ -355,8 +355,32 @@ text-align: center;
     
     color: #000000;
 }
-.pricesPro h1 {
+.pricesPro .bellIcon p {
     color: #ffffff;
+    font-size: 1rem;
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+.icon {
+    /* background-color: #ffffff; */
+    object-fit: contain;
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid black;
+}
+.fa-bell:before {
+    content: '';
+}
+.bellIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 @media screen and (max-width: 1280px){
@@ -457,13 +481,17 @@ text-align: center;
     .hamburgerMenu{
         display: flex;
         cursor: pointer;
-        top: 0;
+        /* top: 0;
         bottom: 0;
         right: 10px;
-        position: absolute;
+        position: absolute; */
+        margin-left: auto;
     }
     .linksDiv{
         display: flex;
         flex-direction: column;
+    }
+    .linksDiv, .cta{
+        display: none;
     }
 }

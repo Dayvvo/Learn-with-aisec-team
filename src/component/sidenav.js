@@ -9,7 +9,7 @@ const Sidenav = () => {
                 </div>
                 <div className="sidenav-items">
                     <img src="./images/workspace.png" alt="" />
-                    <h1 className="sidenav-items-text">Workspaces</h1>
+                    <h1 className="sidenav-items-text">Workspaces &gt;</h1>
                 </div>
                 <div className="sidenav-items">
                     <img src="./images/logs.png" alt="" />

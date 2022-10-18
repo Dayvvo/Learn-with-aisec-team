@@ -7,6 +7,7 @@ const Header = () => {
                     <div className="nav-link">
                         <img src="./images/vector.png" alt="" />
                         <p className="user">iben_Rodi</p>
+                        <div className="triangle"></div>
                     </div>
                 </div>
             </nav>
